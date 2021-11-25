@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.hex-color {
+  font-size: 2rem;
+  margin-left: 15px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}

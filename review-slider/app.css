@@ -1,0 +1,107 @@
+:root {
+  --bgcolor: #1e2022;
+  --bgcolorbox: #181a1b;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: bisque;
+  text-decoration: none;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bgcolor);
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: goldenrod;
+  text-align: center;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 15px 0 5px 0;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 10px 0 15px 0;
+  text-transform: uppercase;
+  color: goldenrod;
+}
+
+p {
+  line-height: 1.7rem;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  min-height: 110px;
+}
+
+i {
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(117, 91, 23);
+  user-select: none;
+  transition: 0.2s ease-in-out;
+}
+
+i:hover {
+  background-color: rgb(156, 122, 33);
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+  border: 1px dashed goldenrod;
+}
+
+.container {
+  width: 500px;
+  background-color: var(--bgcolorbox);
+  padding: 25px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.trans {
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
